@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form-system.css">
+    <title>Form System Freela</title>
+</head>
+<body>
+    <section>
+        <h2>Contratar Plano</h2>
+      <br>
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <label>Name:</label>
+            <input type="text" name="name" placeholder="Type your nome:" autocomplete="off" required>
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="Enter the E-mail:" autocomplete="on" required>
+            <label>Plan:</label>
+            <select required name="$Plano">
+              <option>Simple Plan</option>
+              <option>Basic Plan</option>
+              <option>Gold Plan</option>
+              <option>Diamond Plan</option>
+            </select>
+          <br>
+            <label>Desired payment amount:</label>
+            <input type="text" name="$Valor" required placeholder="Enter the Amount" autocomplete="off" required>
+          <label>Project description</label>
+            <textarea name="$DescricaoDoProjeto" placeholder="Project description:" required></textarea>
+          <br>
+            <button type="submit">Enviar</button>
+
+            <input type="hidden" name="accessKey" value="1400271a-fd5d-49ce-8310-3b88e491258c">
+            <input type="hidden" name="redirectTo" value="https://portifolio-gustavo-leal-1.bigbig5.repl.co">
+        </form>
+    </section>
+</body>
+</html>

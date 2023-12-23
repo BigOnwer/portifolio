@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Contact Form</title>
+</head>
+<body>
+    <section>
+        <h2>Contact Form</h2>
+      <br>
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <label>Name:</label>
+            <input type="text" name="$Nome:" placeholder="Type your nome:" autocomplete="off" required>
+            <label>Email:</label>
+            <input type="email" name="$E-mail:" placeholder="Enter the E-mail:" autocomplete="on" required>
+            <label>Subject</label>
+            <input type="text" name="$Assunto:" required placeholder="Enter the subject" autocomplete="off" required>
+          <label>Menssage</label>
+            <textarea name="$Mensagem:" placeholder="Enter the menssage" required></textarea>
+          <br>
+            <button type="submit">Enviar</button>
+
+            <input type="hidden" name="accessKey" value="1400271a-fd5d-49ce-8310-3b88e491258c">
+            <input type="hidden" name="redirectTo" value="https://portifolio-gustavo-leal-1.bigbig5.repl.co">
+        </form>
+    </section>
+</body>
+</html>

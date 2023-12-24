@@ -26,9 +26,13 @@ link3.addEventListener('click', (event) => {
 
 
 function ir() {
-    window.location.href = "./Pages/form-system.html";
+    window.location.href = "./Pages/form-system.html"
 };
 
 function contactFrom() {
-  window.location.href = "./Pages/form.html";
+  window.location.href = "./Pages/form.html"
+}
+
+function getstarted() {
+  window.location.href = './Pages/getStarted.html'
 }

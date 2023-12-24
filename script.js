@@ -36,3 +36,11 @@ function contactFrom() {
 function getstarted() {
   window.location.href = './Pages/getStarted.html'
 }
+
+function listair() {
+  window.location.href = 'https://aprendendo-react.bigbig5.repl.co/'
+}
+
+function agendair() {
+  window.location.href = 'https://minha-agenda.bigbig5.repl.co'
+}

@@ -44,3 +44,11 @@ function listair() {
 function agendair() {
   window.location.href = 'https://minha-agenda.bigbig5.repl.co'
 }
+
+function climair() {
+  window.location.href = 'https://aprendendo-a-consumir-apis.bigbig5.repl.co'
+}
+
+function codignir() {
+  window.location.href = 'https://coding-editor-live.bigbig5.repl.co'
+}

@@ -5,7 +5,7 @@ body{
 }
 
 .profile{
-  width: 348px;
+  width: 27%;
   height: 252px;
   display: flex;
   flex-direction: column;
@@ -19,8 +19,7 @@ body{
 }
 
 .profile img{
-  width: 150px;
-  height: 150px;
+  width: 40%;
   border-radius: 1000px;
   border: 2px solid #00FF00;
   margin-top: 40px;
@@ -32,7 +31,7 @@ body{
 }
 
 .info{
-  width: 348px;
+  width: 27%;
   height: 250px;
   flex-shrink: 0;
   border-radius: 20px;
@@ -57,7 +56,7 @@ body{
 .info a {
   text-decoration: none;
   color: #837E9F;
-  font-size: 15px;
+  font-size: 100%;
 }
 
 .location, .github, .web, .email {
@@ -65,7 +64,7 @@ body{
 }
 
 .myproject {
-  width: 902px;
+  width: 69%;
   height: 86px;
   flex-shrink: 0;
   border-radius: 20px;
@@ -75,6 +74,7 @@ body{
   top: -549px;
   float: right;
   margin-right: 10px;
+  margin-left: 5px;
 }
 
 .myproject h1{
@@ -82,7 +82,7 @@ body{
 }
 
 .project{
-  width: 420px;
+  width: 30%;
   height: 186px;
   flex-shrink: 0;
   border-radius: 20px;
@@ -92,6 +92,7 @@ body{
   padding: 10px;
   display: inline-block;
   float: right;
+  margin-right: 2%;
   position: relative;
   top: -545px;
   cursor: pointer;
@@ -115,47 +116,82 @@ body{
   display: inline-block;
 }
 
-.tecnologias{
-  width: 901px;
-  height: 234px;
-  flex-shrink: 0;
-  border-radius: 20px;
-  background: #302F3D;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
-  display: flex;
-  float: right;
-  position: relative;
-  top: -545px;
-  margin-right: 10px;
+.voltar{
+  width: 30px;
+  position: absolute;
+  margin: 10px;
+  fill: white;
 }
 
-.tecnologias h1{
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+@media (max-width: 850px) {
+  .projects{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 30%;
+  }
+  .project{
+    width: 65%;
+    height: 160px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
+    display: inline-block;
+    float: right;
+    margin-right: 2%;
+    position: relative;
+    top: -545px;
+    cursor: pointer;
+  }
+
+  .ellipse, .tecno{
+    margin-top: -20px;
+  }
 }
 
-.coluna {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin-top: 80px;
-  margin-right: 10px;
+@media (max-width: 680px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-}
+  .profile {
+    /* remova a propriedade position: absolute */
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+  }
 
-.coluna div{
-  width: 231.31px;
-  height: 33.923px;
-  border-radius: 30px;
-  background: #CB92B1;
-  color: #000;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: 33.923px;
-  text-align: center;
-  position: relative;
-  left: -100px;
+  .info {
+    /* remova a propriedade position: absolute */
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    top: 20px;
+  }
+
+  .projects {
+    /* remova a propriedade position: absolute */
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    top: 590px;
+    left: 15%;
+  }
+
+  .project{
+    height: 30%;
+  }
 }

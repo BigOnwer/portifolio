@@ -225,4 +225,11 @@ body{
     position: relative;
     left: -50px;
   }
+
+  .voltar{
+    width: 30px;
+    position: relative;
+    margin: 10px;
+    fill: white;
+  }
 } 

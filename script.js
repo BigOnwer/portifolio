@@ -42,11 +42,11 @@ function listair() {
 }
 
 function agendair() {
-  window.location.href = 'https://minha-agenda.bigbig5.repl.co'
+  window.location.href = 'https://chess-game.bigbig5.repl.co'
 }
 
 function climair() {
-  window.location.href = 'https://aprendendo-a-consumir-apis.bigbig5.repl.co'
+  window.location.href = 'https://aplicativo-de-tempo.bigbig5.repl.co'
 }
 
 function codignir() {
